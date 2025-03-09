@@ -50,12 +50,12 @@ func main() {
 
 	flag.Usage = func() {
 		fmt.Fprintf(flag.CommandLine.Output(), `Usage:
-bin2csl.exe ENCODING SOURCE_OU_BIN_FILE DESINATION_OU_CSL_FILE
+ou2csl.exe ENCODING SOURCE_OU_BIN_FILE DESINATION_OU_CSL_FILE
 
 Examples:
 
 -- Convert a ou.bin to it's csl version with the correct encoding
-bin2csl.exe 1251 "C:\path with spaces needs quotes\OU.BIN" c:\temp\ou.csl
+ou2csl.exe 1251 "C:\path with spaces needs quotes\OU.BIN" c:\temp\ou.csl
 
 Available encodings:
 %s`, encodingsText.String())
